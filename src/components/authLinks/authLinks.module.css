@@ -1,3 +1,44 @@
 .links{
     cursor: pointer;
 }
+
+.burger{
+    width: 20px;
+    height: 16px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: var(--textColor)
+}
+
+.responsiveMenu{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 36px;
+    background-color: var(--bg);
+    color: var(--textColor);
+    width: 100%;
+    height: calc(100vh - 100px);
+}
+
+@media screen and (max-width: 640px){
+    .burger{
+        display: flex;
+    }
+    .links{
+        display: none;
+    }
+    
+}
